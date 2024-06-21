@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>30 Günde JS Öğrenme</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <button onclick="alert('30 günde javascrip öğrenmeye hoş geldiniz')">merhaba</button>
-    <button onclick="alert('yeni derse hoş geldiniz')">hoş geldiniz</button>
+    <button id="myButton" onclick="console.log('30 günde javascrip öğrenmeye hoşgeldiniz')">merhaba</button>
+    <button id="buton2" onclick="alert('yeni derse hoş geldiniz')">hoş geldiniz</button>
+    <h1 id="baslik">Benim adım musap efe</h1>
 
-<div>merhaba dünya</div>
+    <div class="div1" id="body1"></div>
 
-    <script src="day7.js"></script>
+    <button onclick="clickMe()" class="butonum">bana tıkla</button>
+    <script src="day20.js">
+        const clickMe = () => {
+            alert("neden bana tıklıyorsun")
+        }
+        // const butonum = document.querySelector('button')
+        // butonum.addEventListener("mouseenter", () =>{
+        //     alert("üzerime fare geldi")
+        // })
+
+        //   document.body.addEventListener("keypress", e =>{
+        //             alert("herhangi bir tüşa bastın")
+        //         })
+    </script>
+
 </body>
+
 </html>
